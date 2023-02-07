@@ -1,19 +1,19 @@
-[Study title]
+PhenotypePhebruary2023
 =============
 
 <img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Repo Created">
 
-- Analytics use case(s): **-**
-- Study type: **-**
-- Tags: **-**
-- Study lead: **-**
-- Study lead forums tag: **[[Lead tag]](https://forums.ohdsi.org/u/[Lead tag])**
-- Study start date: **-**
+- Analytics use case(s): **Community wide collaborative phenotype development and evaluation**
+- Study type: **Characterization**
+- Tags: **PhenotypePhebruary2023**
+- Study lead: **Gowtham Rao**
+- Study lead forums tag: **[[Lead tag]](https://forums.ohdsi.org/u/Gowtham_Rao)**
+- Study start date: **02/01/2023**
 - Study end date: **-**
-- Protocol: **-**
-- Publications: **-**
-- Results explorer: **-**
+- Protocol: **https://forums.ohdsi.org/t/phenotype-phebruary-2023-announcements/18076**
+- Publications: **https://forums.ohdsi.org/t/phenotype-phebruary-2023-announcements/18076**
+- Results explorer: **https://data.ohdsi.org/PhenotypePhebruary2023/**
 
-[Description (single paragraph)]
+Community Wide Collaborative Effort to focus activies related to phenotype development and evaluation for the month of February 2023.
 
-[You can add other text at this point]
+See thread https://forums.ohdsi.org/t/phenotype-phebruary-2023-announcements/18076
