@@ -1,0 +1,745 @@
+{
+  "skeletonType": "CohortDiagnosticsStudy",
+  "organizationName": "OHDSI",
+  "description": "Phenotype Phebruary 2023 - an OHDSI network study",
+  "version": "v0.1.0",
+  "skeletonVersion": "v0.0.1",
+  "createdDate": 19395,
+  "createdBy": "rao@ohdsi.org",
+  "cohortDefinitions": [
+    {
+      "createdDate": 1675807718.8840000629425,
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4112970,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "254976006",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Optic nerve glioma",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4242813,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "92257005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Benign neoplasm of optic nerve",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4212449,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "414950005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Optic nerve glioma of orbit",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4194827,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "395502002",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Neoplasm of optic nerve and sheath",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "Neoplasm or glioma of optic nerve",
+            "id": 0
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 376938,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "19133005",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Neurofibromatosis syndrome",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Neurofibromatosis Syndrome",
+            "id": 1
+          }
+        ],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [{
+          "expression": {
+            "CriteriaList": [{
+              "RestrictVisit": false,
+              "StartWindow": {
+                "UseEventEnd": false,
+                "Start": {"Coeff": -1},
+                "End": {"Coeff": 1},
+                "UseIndexEnd": false
+              },
+              "IgnoreObservationPeriod": false,
+              "Criteria": {"ConditionOccurrence": {
+                "ConditionTypeExclude": false,
+                "CodesetId": 1
+              }},
+              "Occurrence": {
+                "Type": 2,
+                "IsDistinct": false,
+                "Count": 1
+              }
+            }],
+            "Type": "ALL",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
+          "name": "Neurofibromatosis",
+          "description": "Anytime in persons history"
+        }],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": "Status: Pending peer review.\nhashTag: #PhenotypePhebruary2023\nContributor: Maxim Moinat\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p11-neurofibromatosis-type-1-with-optical-pathway-glioma/18236\nLogic: Persons with an optic nerve glioma OR non-malignant neoplasm of optic nerve (\u2018Optic nerve glioma of orbit\u2019, \u2018Neoplasm of optic nerve and sheath\u2019, \u2018Benign neoplasm of optic nerve\u2019), and a diagnosis of neurofibromatosis anytime in persons history. The code for neoplasm of optic nerve is in a separate branch of SNOMED.",
+      "modifiedDate": 1675807718.8840000629425,
+      "name": "[PPheb2023] Optical pathway glioma or non malignant neoplasm of optic nerve w neurofibromatosis (FP)",
+      "id": 307
+    },
+    {
+      "createdDate": 1675807845.1040000915527,
+      "expression": {
+        "ExpressionLimit": {"Type": "All"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 376938,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "19133005",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Neurofibromatosis syndrome",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Neurofibromatosis syndrome",
+            "id": 0
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 37311324,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "816077007",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "MRI of brain",
+                "DOMAIN_ID": "Procedure",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Procedure",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "MRI of brain",
+            "id": 5
+          }
+        ],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [
+          {
+            "expression": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "Criteria": {"VisitOccurrence": {
+                  "CorrelatedCriteria": {
+                    "CriteriaList": [{
+                      "RestrictVisit": false,
+                      "StartWindow": {
+                        "UseEventEnd": false,
+                        "Start": {
+                          "Days": 1,
+                          "Coeff": 1
+                        },
+                        "End": {
+                          "Days": 365,
+                          "Coeff": 1
+                        },
+                        "UseIndexEnd": false
+                      },
+                      "IgnoreObservationPeriod": false,
+                      "Criteria": {"VisitOccurrence": {
+                        "VisitTypeExclude": false,
+                        "ProviderSpecialty": [{
+                          "INVALID_REASON_CAPTION": "Unknown",
+                          "CONCEPT_ID": 38004463,
+                          "STANDARD_CONCEPT": null,
+                          "CONCEPT_CODE": "18",
+                          "VOCABULARY_ID": "Medicare Specialty",
+                          "CONCEPT_NAME": "Ophthalmology",
+                          "DOMAIN_ID": "Provider",
+                          "STANDARD_CONCEPT_CAPTION": "Unknown",
+                          "CONCEPT_CLASS_ID": null,
+                          "INVALID_REASON": null
+                        }]
+                      }},
+                      "Occurrence": {
+                        "Type": 2,
+                        "CountColumn": "START_DATE",
+                        "IsDistinct": true,
+                        "Count": 2
+                      }
+                    }],
+                    "Type": "ALL",
+                    "DemographicCriteriaList": [],
+                    "Groups": []
+                  },
+                  "VisitTypeExclude": false,
+                  "ProviderSpecialty": [{
+                    "INVALID_REASON_CAPTION": "Unknown",
+                    "CONCEPT_ID": 38004463,
+                    "STANDARD_CONCEPT": null,
+                    "CONCEPT_CODE": "18",
+                    "VOCABULARY_ID": "Medicare Specialty",
+                    "CONCEPT_NAME": "Ophthalmology",
+                    "DOMAIN_ID": "Provider",
+                    "STANDARD_CONCEPT_CAPTION": "Unknown",
+                    "CONCEPT_CLASS_ID": null,
+                    "INVALID_REASON": null
+                  }]
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": []
+            },
+            "name": "Greater than or equal to 3 Ophthalmology Visits",
+            "description": "anytime in persons history, three visits within one year"
+          },
+          {
+            "expression": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "Criteria": {"ProcedureOccurrence": {
+                  "CodesetId": 5,
+                  "ProcedureTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": []
+            },
+            "name": "MRI of Brain",
+            "description": "anytime in persons history"
+          }
+        ],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": "Status: Pending peer review.\nhashTag: #PhenotypePhebruary2023\nContributor: Maxim Moinat\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p11-neurofibromatosis-type-1-with-optical-pathway-glioma/18236\nLogic: Persons with neurofibromatosis, that also had one MRI of the brain AND at least 3 ophthalmology visits within one year (anytime in persons history). In some centres, an OPG might be coded as general NF and needs to be inferred from follow-up care after diagnosis.",
+      "modifiedDate": 1675807845.1040000915527,
+      "name": "[PPheb2023] Optical pathway glioma with MRI imaging and ophthalmology visits (FP)",
+      "id": 308
+    },
+    {
+      "createdDate": 1675767202.5759999752045,
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [{
+          "expression": {"items": [{
+            "isExcluded": false,
+            "concept": {
+              "INVALID_REASON_CAPTION": "Valid",
+              "CONCEPT_ID": 377252,
+              "STANDARD_CONCEPT": "S",
+              "CONCEPT_CODE": "92824003",
+              "VOCABULARY_ID": "SNOMED",
+              "CONCEPT_NAME": "Neurofibromatosis type 1",
+              "DOMAIN_ID": "Condition",
+              "STANDARD_CONCEPT_CAPTION": "Standard",
+              "CONCEPT_CLASS_ID": "Clinical Finding",
+              "INVALID_REASON": "V"
+            },
+            "includeMapped": false,
+            "includeDescendants": true
+          }]},
+          "name": "Neurofibromatosis type 1",
+          "id": 0
+        }],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": "Status: Pending peer review.\nhashTag: #PhenotypePhebruary2023\nContributor: Maxim Moinat\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p11-neurofibromatosis-type-1-with-optical-pathway-glioma/18236\nLogic: Persons with diagnosis of NF1 diagnosis code (SNOMED:92824003) or descendants (genetic mutation, freckling, elephantiasis, spinal NF, café-au-lait macules, neurofibromas, Noonan syndrome, segmental NF1). These codes are the preferred granular coding for NF1.",
+      "modifiedDate": 1675767202.5759999752045,
+      "name": "[PPheb2023] Neurofibromatosis type 1 (FP)",
+      "id": 304
+    },
+    {
+      "createdDate": 1675807419.9860000610352,
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 376938,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "19133005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Neurofibromatosis syndrome",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": true,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 380975,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "92503002",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Neurofibromatosis type 2",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": false
+              }
+            ]},
+            "name": "Neurofibromatosis Syndrome",
+            "id": 0
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4131769,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "126949007",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Acoustic neuroma",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4307728,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "387891008",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Neoplasm of acoustic nerve",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "Vestibular Schwannoma or Neoplasm of acoustic nerve",
+            "id": 2
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 380975,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "92503002",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Neurofibromatosis type 2",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Neurofibromatosis type 2",
+            "id": 3
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 377889,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "15188001",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Hearing loss",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Hearing loss",
+            "id": 4
+          }
+        ],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [
+          {
+            "expression": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "Criteria": {"ConditionOccurrence": {
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 3
+                }},
+                "Occurrence": {
+                  "Type": 0,
+                  "IsDistinct": false,
+                  "Count": 0
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": []
+            },
+            "name": "No Neurofibromatosis type 2",
+            "description": "Anytime in persons history"
+          },
+          {
+            "expression": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "Criteria": {"ConditionOccurrence": {
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 2
+                }},
+                "Occurrence": {
+                  "Type": 0,
+                  "IsDistinct": false,
+                  "Count": 0
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": []
+            },
+            "name": "No Vestibular Schwannoma",
+            "description": "Anytime in persons history (note, also includes Neurofibromatosis 2)"
+          },
+          {
+            "expression": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "Criteria": {"ConditionOccurrence": {
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 4
+                }},
+                "Occurrence": {
+                  "Type": 0,
+                  "IsDistinct": false,
+                  "Count": 0
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": []
+            },
+            "name": "No hearing loss",
+            "description": "Anytime in persons history"
+          }
+        ],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": "Status: Pending peer review.\nhashTag: #PhenotypePhebruary2023\nContributor: Maxim Moinat\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p11-neurofibromatosis-type-1-with-optical-pathway-glioma/18236\nLogic: Persons with Neurofibromatosis without a diagnosis of NF2, vestibular schwannoma or hearing problems. Not all data sources capture NF subtype (e.g. when using ICD10), so to select NF1 we exclude diagnoses that give a suspicion of NF2 (affecting auditory system).",
+      "modifiedDate": 1675807419.9860000610352,
+      "name": "[PPheb2023] Neurofibromatosis type 1 without Type 2 (FP)",
+      "id": 305
+    },
+    {
+      "createdDate": 1675807667.3129999637604,
+      "expression": {
+        "ExpressionLimit": {"Type": "First"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 4112970,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "254976006",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Optic nerve glioma",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Optic nerve glioma",
+            "id": 0
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 376938,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "19133005",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Neurofibromatosis syndrome",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Neurofibromatosis Syndrome",
+            "id": 1
+          }
+        ],
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "First"},
+        "InclusionRules": [{
+          "expression": {
+            "CriteriaList": [{
+              "RestrictVisit": false,
+              "StartWindow": {
+                "UseEventEnd": false,
+                "Start": {"Coeff": -1},
+                "End": {"Coeff": 1},
+                "UseIndexEnd": false
+              },
+              "IgnoreObservationPeriod": false,
+              "Criteria": {"ConditionOccurrence": {
+                "ConditionTypeExclude": false,
+                "CodesetId": 1
+              }},
+              "Occurrence": {
+                "Type": 2,
+                "IsDistinct": false,
+                "Count": 1
+              }
+            }],
+            "Type": "ALL",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
+          "name": "Neurofibromatosis",
+          "description": "Anytime in persons history"
+        }],
+        "PrimaryCriteria": {
+          "CriteriaList": [{"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }}],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": "Status: Pending peer review.\nhashTag: #PhenotypePhebruary2023\nContributor: Maxim Moinat\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-2023-p11-neurofibromatosis-type-1-with-optical-pathway-glioma/18236\nLogic: Persons with an optic nerve glioma and diagnosis of neurofibromatosis anytime in persons history. This would be the preferred code for an OPG.",
+      "modifiedDate": 1675807667.3129999637604,
+      "name": "[PPheb2023] Optical pathway glioma and neurofibromatosis (FP)",
+      "id": 306
+    }
+  ],
+  "name": "Phenotype Phebruary 2023 - an OHDSI network study",
+  "modifiedDate": 19395,
+  "modifiedBy": "rao@ohdsi.org",
+  "id": 1,
+  "packageName": "phenotypePhebruary2023"
+}

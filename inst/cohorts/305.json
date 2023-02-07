@@ -1,0 +1,232 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 376938,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "19133005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Neurofibromatosis syndrome",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": true,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 380975,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "92503002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Neurofibromatosis type 2",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "Neurofibromatosis Syndrome",
+      "id": 0
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4131769,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "126949007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Acoustic neuroma",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4307728,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "387891008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Neoplasm of acoustic nerve",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Vestibular Schwannoma or Neoplasm of acoustic nerve",
+      "id": 2
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 380975,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "92503002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neurofibromatosis type 2",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "Neurofibromatosis type 2",
+      "id": 3
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 377889,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "15188001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Hearing loss",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "Hearing loss",
+      "id": 4
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {"Coeff": -1},
+            "End": {"Coeff": 1},
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 3
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": []
+      },
+      "name": "No Neurofibromatosis type 2",
+      "description": "Anytime in persons history"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {"Coeff": -1},
+            "End": {"Coeff": 1},
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 2
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": []
+      },
+      "name": "No Vestibular Schwannoma",
+      "description": "Anytime in persons history (note, also includes Neurofibromatosis 2)"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {"Coeff": -1},
+            "End": {"Coeff": 1},
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 4
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": []
+      },
+      "name": "No hearing loss",
+      "description": "Anytime in persons history"
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "CodesetId": 0
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}
