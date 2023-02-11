@@ -1,7 +1,6 @@
 # this script enables to easily remove log entries in incremental mode.
-# if we want to rerun/overwrite previous data
+# Please use this script, if we want to rerun/overwrite previous data
 
-library(magrittr)
 logFolder <-
   "s:/phenotypePhebruary2023"
 diagnosticsFileName <- "CreatedDiagnostics.csv"
@@ -14,15 +13,13 @@ listFiles <-
     recursive = TRUE
   )
 
-# "getCohortCounts", "runInclusionStatistics", "runIncludedSourceConcepts",
-# "runBreakdownIndexEvents", "runOrphanConcepts", 
-# "runVisitContext", "runIncidenceRate", "runCohortOverlap","runCohortAsFeatures",
-# "runTemporalCohortCharacterization"
+# options for tasks to remove
+# "runInclusionStatistics", "runIncludedSourceConcepts ", "runOrphanConcepts",
+# "runTimeSeries", "runVisitContext",
+# "runBreakdownIndexEvents", "runIncidenceRate", "runCohortRelationship","runTemporalCohortCharacterization"
 
 
 # tasksToRemove <- c("runTimeSeries")
-
-
 
 
 for (i in (1:length(listFiles))) {
@@ -30,8 +27,7 @@ for (i in (1:length(listFiles))) {
     file = listFiles[[i]],
     col_types = readr::cols(),
     guess_max = min(1e7)
-  ) %>%
-    dplyr::filter(!.data$task %in% tasksToRemove) %>%
+  ) |>
+    dplyr::filter(!.data$task %in% tasksToRemove) |>
     readr::write_excel_csv(file = listFiles[[i]])
 }
-

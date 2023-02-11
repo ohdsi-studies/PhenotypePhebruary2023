@@ -1,8 +1,8 @@
 atlasId,cohortId,id,cohortName
-314,314,314,[P] Anaphylaxis In A TRUE Doctors Office x3
-315,315,315,[P] Anaphylaxis In Outpatient setting x3
-316,316,316,[P] Anaphylaxis In an inpatient or emergency setting x1
-317,317,317,[P] Anaphylaxis In an inpatient or emergency setting with epinephrine x1a
+314,314,314,[P] x3 Anaphylaxis In A TRUE Doctors Office
+315,315,315,[P] x3 Anaphylaxis In Outpatient setting
+316,316,316,[P] x1 Anaphylaxis In an inpatient or emergency setting
+317,317,317,[P] x1a Anaphylaxis In an inpatient or emergency setting with epinephrine
 259,259,259,"[P] Anaphylaxis all cause (1Pe, 30Era)"
 258,258,258,"[P] Anaphylaxis or Anaphylactic shock events (1Pe, 30Era)"
 221,221,221,"[P] Anaphylaxis Non Environmental exposure related (1Pe, 30Era)"
