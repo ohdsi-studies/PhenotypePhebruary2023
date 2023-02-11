@@ -1,23 +1,23 @@
 library(magrittr)
 # where are the cohort diagnostics output?
 folderWithZipFilesToUpload <-
-  "D:\\studyResults\\ohdsiTutorial2022CohortDiagnostics\\iquvia5pct"
+  "D:\\studyResults\\phenotypePhebruary2023"
 
 # what is the name of the schema you want to upload to?
 resultsSchema <-
-  tolower('ohdsi22TutorialCd') # change to your schema - please use lower case
+  tolower('phenotypePhebruary2023') # change to your schema - please use lower case
 
 # Postgres server: connection details to OHDSI Phenotype library. Please change to your postgres connection details
 connectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = Sys.getenv("shinydbDbms", unset = "postgresql"),
   server = paste(
-    Sys.getenv("shinydbServer"),
-    Sys.getenv("shinydbDatabase"),
+    Sys.getenv("phenotypeLibraryServer"),
+    Sys.getenv("phenotypeLibrarydb"),
     sep = "/"
   ),
-  port = Sys.getenv("shinydbPort"),
-  user = Sys.getenv("shinydbUser"),
-  password = Sys.getenv("shinydbPW")
+  port = Sys.getenv("phenotypeLibraryDbPort"),
+  user = Sys.getenv("phenotypeLibrarydbUser"),
+  password = Sys.getenv("phenotypeLibrarydbPw")
 )
 
 connection <-
@@ -104,7 +104,7 @@ if (!schemaExists) {
       table_name = tablesInResultsDataModel[[i]]
     )
   }
-  CohortDiagnostics::createResultsDataModel(connectionDetails = connectionDetails, schema = resultsSchema)
+  CohortDiagnostics::createResultsDataModel(connectionDetails = connectionDetails, databaseSchema = resultsSchema)
 }
 
 # sqlGrant <-
