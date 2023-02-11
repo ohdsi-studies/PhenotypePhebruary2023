@@ -1056,7 +1056,7 @@
         "CodesetId": 2
       }}
     ],
-    "PrimaryCriteriaLimit": {"Type": "All"},
+    "PrimaryCriteriaLimit": {"Type": "First"},
     "ObservationWindow": {
       "PostDays": 0,
       "PriorDays": 0
