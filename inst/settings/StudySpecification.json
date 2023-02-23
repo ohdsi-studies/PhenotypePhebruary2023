@@ -4,876 +4,9 @@
   "description": "Cohort diagnostics on phenotypePhebruary2023 cohorts.",
   "version": "v0.1.0",
   "skeletonVersion": "v0.0.1",
-  "createdDate": 19399,
+  "createdDate": 19411,
   "createdBy": "rao@ohdsi.org",
   "cohortDefinitions": [
-    {
-      "createdDate": 1676138957.7030000686646,
-      "expression": {
-        "ExpressionLimit": {"Type": "All"},
-        "CollapseSettings": {
-          "CollapseType": "ERA",
-          "EraPad": 0
-        },
-        "CensorWindow": {},
-        "ConceptSets": [
-          {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 762509,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "428241000124101",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis due to human papillomavirus vaccine",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 441202,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "39579001",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 762513,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "428301000124106",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis due to meningococcal vaccine",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 762515,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "428331000124103",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis due to rotavirus vaccine",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 762511,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "428281000124107",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis due to diphtheria and tetanus vaccine",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 762514,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "428321000124101",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Anaphylaxis due to Hepatitis B vaccine",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4148381,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "35001004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Non-allergic anaphylaxis",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "All cause Anaphylaxis",
-            "id": 2
-          },
-          {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 262,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "ERIP",
-                  "VOCABULARY_ID": "Visit",
-                  "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
-                  "DOMAIN_ID": "Visit",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Visit",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 9201,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "IP",
-                  "VOCABULARY_ID": "Visit",
-                  "CONCEPT_NAME": "Inpatient Visit",
-                  "DOMAIN_ID": "Visit",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Visit",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "Inpatient or Inpatient/ER visit",
-            "id": 3
-          },
-          {
-            "expression": {"items": [{
-              "isExcluded": false,
-              "concept": {
-                "INVALID_REASON_CAPTION": "Valid",
-                "CONCEPT_ID": 9203,
-                "STANDARD_CONCEPT": "S",
-                "CONCEPT_CODE": "ER",
-                "VOCABULARY_ID": "Visit",
-                "CONCEPT_NAME": "Emergency Room Visit",
-                "DOMAIN_ID": "Visit",
-                "STANDARD_CONCEPT_CAPTION": "Standard",
-                "CONCEPT_CLASS_ID": "Visit",
-                "INVALID_REASON": "V"
-              },
-              "includeMapped": false,
-              "includeDescendants": true
-            }]},
-            "name": "Emergency room",
-            "id": 4
-          },
-          {
-            "expression": {"items": [{
-              "isExcluded": false,
-              "concept": {
-                "INVALID_REASON_CAPTION": "Valid",
-                "CONCEPT_ID": 9202,
-                "STANDARD_CONCEPT": "S",
-                "CONCEPT_CODE": "OP",
-                "VOCABULARY_ID": "Visit",
-                "CONCEPT_NAME": "Outpatient Visit",
-                "DOMAIN_ID": "Visit",
-                "STANDARD_CONCEPT_CAPTION": "Standard",
-                "CONCEPT_CLASS_ID": "Visit",
-                "INVALID_REASON": "V"
-              },
-              "includeMapped": false,
-              "includeDescendants": true
-            }]},
-            "name": "Outpatient Visit",
-            "id": 5
-          },
-          {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45890237,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013711",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "Emergency Department Services",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4163685,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "4525004",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Emergency department patient visit",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "Urgent care concepts",
-            "id": 6
-          },
-          {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4289459,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "69399002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Initial hospital visit by physician",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45888082,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013668",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "Subsequent Hospital Care Services",
-                  "DOMAIN_ID": "Procedure",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4203130,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "308283009",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Discharge from hospital",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4307376,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "83362003",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Final inpatient visit with instructions at discharge",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4214577,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "394656005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Inpatient care",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 2721702,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "T2045",
-                  "VOCABULARY_ID": "HCPCS",
-                  "CONCEPT_NAME": "Hospice general inpatient care; per diem",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "HCPCS",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4027135,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "12843005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Subsequent hospital visit by physician",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45888081,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013649",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "Hospital Observation Care Discharge Services",
-                  "DOMAIN_ID": "Procedure",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45888494,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1019134",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "Inpatient Neonatal and Pediatric Critical Care Services",
-                  "DOMAIN_ID": "Procedure",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45888205,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013800",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "Prolonged service in the inpatient or observation setting, requiring unit/floor time beyond the usual service",
-                  "DOMAIN_ID": "Procedure",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45889184,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013661",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "New or Established Patient Initial Hospital Inpatient Care Services",
-                  "DOMAIN_ID": "Procedure",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 8715,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "32485007",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Hospital admission",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 45888973,
-                  "STANDARD_CONCEPT": "C",
-                  "CONCEPT_CODE": "1013700",
-                  "VOCABULARY_ID": "CPT4",
-                  "CONCEPT_NAME": "New or Established Patient Initial Inpatient Consultation Services",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Classification",
-                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4202667,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "53923005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Medical consultation on inpatient",
-                  "DOMAIN_ID": "Observation",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Procedure",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "Inpatient Care concepts",
-            "id": 7
-          }
-        ],
-        "EndStrategy": {"DateOffset": {
-          "DateField": "EndDate",
-          "Offset": 0
-        }},
-        "cdmVersionRange": ">=5.0.0",
-        "CensoringCriteria": [],
-        "QualifiedLimit": {"Type": "All"},
-        "InclusionRules": [{
-          "expression": {
-            "CriteriaList": [
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"VisitOccurrence": {
-                  "CodesetId": 3,
-                  "VisitTypeExclude": false
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"VisitOccurrence": {
-                  "CodesetId": 4,
-                  "VisitTypeExclude": false
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"VisitOccurrence": {
-                  "CorrelatedCriteria": {
-                    "CriteriaList": [
-                      {
-                        "RestrictVisit": false,
-                        "StartWindow": {
-                          "UseEventEnd": false,
-                          "Start": {
-                            "Days": 0,
-                            "Coeff": -1
-                          },
-                          "End": {
-                            "Days": 0,
-                            "Coeff": 1
-                          },
-                          "UseIndexEnd": false
-                        },
-                        "IgnoreObservationPeriod": false,
-                        "Criteria": {"ProcedureOccurrence": {
-                          "CodesetId": 6,
-                          "ProcedureTypeExclude": false
-                        }},
-                        "Occurrence": {
-                          "Type": 2,
-                          "IsDistinct": false,
-                          "Count": 1
-                        }
-                      },
-                      {
-                        "RestrictVisit": false,
-                        "StartWindow": {
-                          "UseEventEnd": false,
-                          "Start": {
-                            "Days": 0,
-                            "Coeff": -1
-                          },
-                          "End": {
-                            "Days": 0,
-                            "Coeff": 1
-                          },
-                          "UseIndexEnd": false
-                        },
-                        "IgnoreObservationPeriod": false,
-                        "Criteria": {"Observation": {
-                          "ObservationTypeExclude": false,
-                          "CodesetId": 6
-                        }},
-                        "Occurrence": {
-                          "Type": 2,
-                          "IsDistinct": false,
-                          "Count": 1
-                        }
-                      },
-                      {
-                        "RestrictVisit": false,
-                        "StartWindow": {
-                          "UseEventEnd": false,
-                          "Start": {
-                            "Days": 0,
-                            "Coeff": -1
-                          },
-                          "End": {
-                            "Days": 0,
-                            "Coeff": 1
-                          },
-                          "UseIndexEnd": false
-                        },
-                        "IgnoreObservationPeriod": false,
-                        "Criteria": {"ProcedureOccurrence": {
-                          "CodesetId": 7,
-                          "ProcedureTypeExclude": false
-                        }},
-                        "Occurrence": {
-                          "Type": 2,
-                          "IsDistinct": false,
-                          "Count": 1
-                        }
-                      },
-                      {
-                        "RestrictVisit": false,
-                        "StartWindow": {
-                          "UseEventEnd": false,
-                          "Start": {
-                            "Days": 0,
-                            "Coeff": -1
-                          },
-                          "End": {
-                            "Days": 0,
-                            "Coeff": 1
-                          },
-                          "UseIndexEnd": false
-                        },
-                        "IgnoreObservationPeriod": false,
-                        "Criteria": {"Observation": {
-                          "ObservationTypeExclude": false,
-                          "CodesetId": 7
-                        }},
-                        "Occurrence": {
-                          "Type": 2,
-                          "IsDistinct": false,
-                          "Count": 1
-                        }
-                      }
-                    ],
-                    "Type": "ANY",
-                    "DemographicCriteriaList": [],
-                    "Groups": []
-                  },
-                  "CodesetId": 5,
-                  "VisitTypeExclude": false
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"Observation": {
-                  "ObservationTypeExclude": false,
-                  "CodesetId": 6
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"ProcedureOccurrence": {
-                  "CodesetId": 6,
-                  "ProcedureTypeExclude": false
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"ProcedureOccurrence": {
-                  "CodesetId": 7,
-                  "ProcedureTypeExclude": false
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              },
-              {
-                "RestrictVisit": false,
-                "StartWindow": {
-                  "UseEventEnd": false,
-                  "Start": {"Coeff": -1},
-                  "End": {
-                    "Days": 1,
-                    "Coeff": 1
-                  },
-                  "UseIndexEnd": false
-                },
-                "IgnoreObservationPeriod": false,
-                "EndWindow": {
-                  "UseEventEnd": true,
-                  "Start": {
-                    "Days": 1,
-                    "Coeff": -1
-                  },
-                  "End": {"Coeff": 1},
-                  "UseIndexEnd": false
-                },
-                "Criteria": {"Observation": {
-                  "ObservationTypeExclude": false,
-                  "CodesetId": 7
-                }},
-                "Occurrence": {
-                  "Type": 2,
-                  "IsDistinct": false,
-                  "Count": 1
-                }
-              }
-            ],
-            "Type": "ANY",
-            "DemographicCriteriaList": [],
-            "Groups": []
-          },
-          "name": "Inpatient OR inpatient / ED or ED or (out patient AND ED/IP visit as procedure or observation) ",
-          "description": "Limit to events that are either inpatient or emergency room, where the inpatient or emergency room ended either 1 day before to either started 1 day after. Inpatient or emergency care may be identified by either site of care (Visit) or type of service (procedure and observation concepts)"
-        }],
-        "PrimaryCriteria": {
-          "CriteriaList": [
-            {"ConditionOccurrence": {
-              "ConditionTypeExclude": false,
-              "CodesetId": 2
-            }},
-            {"Observation": {
-              "ObservationTypeExclude": false,
-              "CodesetId": 2
-            }}
-          ],
-          "PrimaryCriteriaLimit": {"Type": "First"},
-          "ObservationWindow": {
-            "PostDays": 0,
-            "PriorDays": 0
-          }
-        }
-      },
-      "logicDescription": null,
-      "modifiedDate": 1676138957.7030000686646,
-      "name": "[P] x1 Anaphylaxis In an inpatient or emergency setting First Occurrence",
-      "id": 320
-    },
     {
       "createdDate": 1676053369.0759999752045,
       "expression": {
@@ -1943,7 +1076,7 @@
       },
       "logicDescription": null,
       "modifiedDate": 1676053369.0759999752045,
-      "name": "[P] x3 Anaphylaxis In A TRUE Doctors Office",
+      "name": "[PhePheb2023] x3 Anaphylaxis In A TRUE Doctors Office",
       "id": 314
     },
     {
@@ -2785,7 +1918,7 @@
       },
       "logicDescription": null,
       "modifiedDate": 1676060060.808000087738,
-      "name": "[P] x3 Anaphylaxis In Outpatient setting",
+      "name": "[PhePheb2023] x3 Anaphylaxis In Outpatient setting",
       "id": 315
     },
     {
@@ -3652,7 +2785,7 @@
       },
       "logicDescription": null,
       "modifiedDate": 1676060084.9660000801086,
-      "name": "[P] x1 Anaphylaxis In an inpatient or emergency setting",
+      "name": "[PhePheb2023] x1 Anaphylaxis In an inpatient or emergency setting",
       "id": 316
     },
     {
@@ -4218,7 +3351,7 @@
       },
       "logicDescription": null,
       "modifiedDate": 1676060885.885999917984,
-      "name": "[P] Anaphylaxis In an inpatient or emergency setting with epinephrine x1a",
+      "name": "[PhePheb2023] x1a Anaphylaxis In an inpatient or emergency setting with epinephrine",
       "id": 317
     },
     {
@@ -4381,7 +3514,7 @@
           }
         }
       },
-      "logicDescription": "Status: Pending peer review.\nContributor: Gowtham A. Rao, Andrea Noel\nForum post: https://forums.ohdsi.org/t/phenotype-phebrurary-2023-p2-anaphylaxis/18193\nLogic: all events of anaphylaxis",
+      "logicDescription": "Status: Pending peer review.\nContributor: Gowtham A. Rao, Andrea Noel\nForum: https://forums.ohdsi.org/t/phenotype-phebrurary-2023-p2-anaphylaxis/18193\nLogic: all events of anaphylaxis",
       "modifiedDate": 1669654217.5009999275208,
       "name": "[P] Anaphylaxis all cause (1Pe, 30Era)",
       "id": 259
@@ -4455,7 +3588,7 @@
           }
         }
       },
-      "logicDescription": "Status: Pending peer review.\nContributor: Erica Voss\nForum post: https://forums.ohdsi.org/t/phenotype-phebruary-day-24-anaphylaxis/16033\nLogic: all events of anaphylaxis or anaphylaxis shock due to serum with no events in prior clean window.",
+      "logicDescription": "Status: Pending peer review.\nContributor: Erica Voss\nForum: https://forums.ohdsi.org/t/phenotype-phebruary-day-24-anaphylaxis/16033\nLogic: all events of anaphylaxis or anaphylaxis shock due to serum with no events in prior clean window.",
       "modifiedDate": 1669653517.4319999217987,
       "name": "[P] Anaphylaxis or Anaphylactic shock events (1Pe, 30Era)",
       "id": 258
@@ -5344,10 +4477,877 @@
           }
         }
       },
-      "logicDescription": "Status: Pending peer review.\nContributor: Gowtham A. Rao\nForum post: https://forums.ohdsi.org/t/phenotype-submission-anaphylaxis/17835\nLogic: all events of anaphylaxis that is not due to environmental etiology and no food, substance, insect bite or sting, poisoning as an explanation for anaphylaxis.",
+      "logicDescription": "Status: Pending peer review.\nContributor: Gowtham A. Rao\nForum: https://forums.ohdsi.org/t/phenotype-submission-anaphylaxis/17835\nLogic: all events of anaphylaxis that is not due to environmental etiology and no food, substance, insect bite or sting, poisoning as an explanation for anaphylaxis.",
       "modifiedDate": 1668200645.5680000782013,
       "name": "[P] Anaphylaxis Non Environmental exposure related (1Pe, 30Era)",
       "id": 221
+    },
+    {
+      "createdDate": 1676138957.7030000686646,
+      "expression": {
+        "ExpressionLimit": {"Type": "All"},
+        "CollapseSettings": {
+          "CollapseType": "ERA",
+          "EraPad": 0
+        },
+        "CensorWindow": {},
+        "ConceptSets": [
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 762509,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "428241000124101",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis due to human papillomavirus vaccine",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 441202,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "39579001",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 762513,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "428301000124106",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis due to meningococcal vaccine",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 762515,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "428331000124103",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis due to rotavirus vaccine",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 762511,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "428281000124107",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis due to diphtheria and tetanus vaccine",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 762514,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "428321000124101",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Anaphylaxis due to Hepatitis B vaccine",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4148381,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "35001004",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Non-allergic anaphylaxis",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "All cause Anaphylaxis",
+            "id": 2
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 262,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "ERIP",
+                  "VOCABULARY_ID": "Visit",
+                  "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+                  "DOMAIN_ID": "Visit",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Visit",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 9201,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "IP",
+                  "VOCABULARY_ID": "Visit",
+                  "CONCEPT_NAME": "Inpatient Visit",
+                  "DOMAIN_ID": "Visit",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Visit",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "Inpatient or Inpatient/ER visit",
+            "id": 3
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 9203,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "ER",
+                "VOCABULARY_ID": "Visit",
+                "CONCEPT_NAME": "Emergency Room Visit",
+                "DOMAIN_ID": "Visit",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Visit",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Emergency room",
+            "id": 4
+          },
+          {
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 9202,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "OP",
+                "VOCABULARY_ID": "Visit",
+                "CONCEPT_NAME": "Outpatient Visit",
+                "DOMAIN_ID": "Visit",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Visit",
+                "INVALID_REASON": "V"
+              },
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Outpatient Visit",
+            "id": 5
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45890237,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013711",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "Emergency Department Services",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4163685,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "4525004",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Emergency department patient visit",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "Urgent care concepts",
+            "id": 6
+          },
+          {
+            "expression": {"items": [
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4289459,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "69399002",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Initial hospital visit by physician",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45888082,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013668",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "Subsequent Hospital Care Services",
+                  "DOMAIN_ID": "Procedure",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4203130,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "308283009",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Discharge from hospital",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4307376,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "83362003",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Final inpatient visit with instructions at discharge",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4214577,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "394656005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Inpatient care",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 2721702,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "T2045",
+                  "VOCABULARY_ID": "HCPCS",
+                  "CONCEPT_NAME": "Hospice general inpatient care; per diem",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "HCPCS",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4027135,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "12843005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Subsequent hospital visit by physician",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45888081,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013649",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "Hospital Observation Care Discharge Services",
+                  "DOMAIN_ID": "Procedure",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45888494,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1019134",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "Inpatient Neonatal and Pediatric Critical Care Services",
+                  "DOMAIN_ID": "Procedure",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45888205,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013800",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "Prolonged service in the inpatient or observation setting, requiring unit/floor time beyond the usual service",
+                  "DOMAIN_ID": "Procedure",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45889184,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013661",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "New or Established Patient Initial Hospital Inpatient Care Services",
+                  "DOMAIN_ID": "Procedure",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 8715,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "32485007",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Hospital admission",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 45888973,
+                  "STANDARD_CONCEPT": "C",
+                  "CONCEPT_CODE": "1013700",
+                  "VOCABULARY_ID": "CPT4",
+                  "CONCEPT_NAME": "New or Established Patient Initial Inpatient Consultation Services",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Classification",
+                  "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4202667,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "53923005",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Medical consultation on inpatient",
+                  "DOMAIN_ID": "Observation",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Procedure",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": true
+              }
+            ]},
+            "name": "Inpatient Care concepts",
+            "id": 7
+          }
+        ],
+        "EndStrategy": {"DateOffset": {
+          "DateField": "EndDate",
+          "Offset": 0
+        }},
+        "cdmVersionRange": ">=5.0.0",
+        "CensoringCriteria": [],
+        "QualifiedLimit": {"Type": "All"},
+        "InclusionRules": [{
+          "expression": {
+            "CriteriaList": [
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"VisitOccurrence": {
+                  "CodesetId": 3,
+                  "VisitTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"VisitOccurrence": {
+                  "CodesetId": 4,
+                  "VisitTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"VisitOccurrence": {
+                  "CorrelatedCriteria": {
+                    "CriteriaList": [
+                      {
+                        "RestrictVisit": false,
+                        "StartWindow": {
+                          "UseEventEnd": false,
+                          "Start": {
+                            "Days": 0,
+                            "Coeff": -1
+                          },
+                          "End": {
+                            "Days": 0,
+                            "Coeff": 1
+                          },
+                          "UseIndexEnd": false
+                        },
+                        "IgnoreObservationPeriod": false,
+                        "Criteria": {"ProcedureOccurrence": {
+                          "CodesetId": 6,
+                          "ProcedureTypeExclude": false
+                        }},
+                        "Occurrence": {
+                          "Type": 2,
+                          "IsDistinct": false,
+                          "Count": 1
+                        }
+                      },
+                      {
+                        "RestrictVisit": false,
+                        "StartWindow": {
+                          "UseEventEnd": false,
+                          "Start": {
+                            "Days": 0,
+                            "Coeff": -1
+                          },
+                          "End": {
+                            "Days": 0,
+                            "Coeff": 1
+                          },
+                          "UseIndexEnd": false
+                        },
+                        "IgnoreObservationPeriod": false,
+                        "Criteria": {"Observation": {
+                          "ObservationTypeExclude": false,
+                          "CodesetId": 6
+                        }},
+                        "Occurrence": {
+                          "Type": 2,
+                          "IsDistinct": false,
+                          "Count": 1
+                        }
+                      },
+                      {
+                        "RestrictVisit": false,
+                        "StartWindow": {
+                          "UseEventEnd": false,
+                          "Start": {
+                            "Days": 0,
+                            "Coeff": -1
+                          },
+                          "End": {
+                            "Days": 0,
+                            "Coeff": 1
+                          },
+                          "UseIndexEnd": false
+                        },
+                        "IgnoreObservationPeriod": false,
+                        "Criteria": {"ProcedureOccurrence": {
+                          "CodesetId": 7,
+                          "ProcedureTypeExclude": false
+                        }},
+                        "Occurrence": {
+                          "Type": 2,
+                          "IsDistinct": false,
+                          "Count": 1
+                        }
+                      },
+                      {
+                        "RestrictVisit": false,
+                        "StartWindow": {
+                          "UseEventEnd": false,
+                          "Start": {
+                            "Days": 0,
+                            "Coeff": -1
+                          },
+                          "End": {
+                            "Days": 0,
+                            "Coeff": 1
+                          },
+                          "UseIndexEnd": false
+                        },
+                        "IgnoreObservationPeriod": false,
+                        "Criteria": {"Observation": {
+                          "ObservationTypeExclude": false,
+                          "CodesetId": 7
+                        }},
+                        "Occurrence": {
+                          "Type": 2,
+                          "IsDistinct": false,
+                          "Count": 1
+                        }
+                      }
+                    ],
+                    "Type": "ANY",
+                    "DemographicCriteriaList": [],
+                    "Groups": []
+                  },
+                  "CodesetId": 5,
+                  "VisitTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"Observation": {
+                  "ObservationTypeExclude": false,
+                  "CodesetId": 6
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"ProcedureOccurrence": {
+                  "CodesetId": 6,
+                  "ProcedureTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"ProcedureOccurrence": {
+                  "CodesetId": 7,
+                  "ProcedureTypeExclude": false
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              },
+              {
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {"Coeff": -1},
+                  "End": {
+                    "Days": 1,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": false,
+                "EndWindow": {
+                  "UseEventEnd": true,
+                  "Start": {
+                    "Days": 1,
+                    "Coeff": -1
+                  },
+                  "End": {"Coeff": 1},
+                  "UseIndexEnd": false
+                },
+                "Criteria": {"Observation": {
+                  "ObservationTypeExclude": false,
+                  "CodesetId": 7
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }
+            ],
+            "Type": "ANY",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
+          "name": "Inpatient OR inpatient / ED or ED or (out patient AND ED/IP visit as procedure or observation) ",
+          "description": "Limit to events that are either inpatient or emergency room, where the inpatient or emergency room ended either 1 day before to either started 1 day after. Inpatient or emergency care may be identified by either site of care (Visit) or type of service (procedure and observation concepts)"
+        }],
+        "PrimaryCriteria": {
+          "CriteriaList": [
+            {"ConditionOccurrence": {
+              "ConditionTypeExclude": false,
+              "CodesetId": 2
+            }},
+            {"Observation": {
+              "ObservationTypeExclude": false,
+              "CodesetId": 2
+            }}
+          ],
+          "PrimaryCriteriaLimit": {"Type": "First"},
+          "ObservationWindow": {
+            "PostDays": 0,
+            "PriorDays": 0
+          }
+        }
+      },
+      "logicDescription": null,
+      "modifiedDate": 1676138957.7030000686646,
+      "name": "[PhePheb2023] x1 Anaphylaxis In an inpatient or emergency setting First Occurrence",
+      "id": 320
     },
     {
       "createdDate": 1676138931.4059998989105,
@@ -6418,7 +6418,7 @@
       },
       "logicDescription": null,
       "modifiedDate": 1676138931.4059998989105,
-      "name": "[P] x3 Anaphylaxis In A TRUE Doctors Office First Occurrence",
+      "name": "[PhePheb2023] x3 Anaphylaxis In A TRUE Doctors Office First Occurrence",
       "id": 319
     },
     {
@@ -6432,77 +6432,24 @@
         "CensorWindow": {},
         "ConceptSets": [
           {
-            "expression": {"items": [
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4112970,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "254976006",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Optic nerve glioma",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
+            "expression": {"items": [{
+              "isExcluded": false,
+              "concept": {
+                "INVALID_REASON_CAPTION": "Valid",
+                "CONCEPT_ID": 4216000,
+                "STANDARD_CONCEPT": "S",
+                "CONCEPT_CODE": "395505000",
+                "VOCABULARY_ID": "SNOMED",
+                "CONCEPT_NAME": "Neoplasm of optic nerve",
+                "DOMAIN_ID": "Condition",
+                "STANDARD_CONCEPT_CAPTION": "Standard",
+                "CONCEPT_CLASS_ID": "Clinical Finding",
+                "INVALID_REASON": "V"
               },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4242813,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "92257005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Benign neoplasm of optic nerve",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4212449,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "414950005",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Optic nerve glioma of orbit",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              },
-              {
-                "isExcluded": false,
-                "concept": {
-                  "INVALID_REASON_CAPTION": "Valid",
-                  "CONCEPT_ID": 4194827,
-                  "STANDARD_CONCEPT": "S",
-                  "CONCEPT_CODE": "395502002",
-                  "VOCABULARY_ID": "SNOMED",
-                  "CONCEPT_NAME": "Neoplasm of optic nerve and sheath",
-                  "DOMAIN_ID": "Condition",
-                  "STANDARD_CONCEPT_CAPTION": "Standard",
-                  "CONCEPT_CLASS_ID": "Clinical Finding",
-                  "INVALID_REASON": "V"
-                },
-                "includeMapped": false,
-                "includeDescendants": true
-              }
-            ]},
-            "name": "Neoplasm or glioma of optic nerve",
+              "includeMapped": false,
+              "includeDescendants": true
+            }]},
+            "name": "Neoplasm of optic nerve",
             "id": 0
           },
           {
@@ -6968,7 +6915,7 @@
     }
   ],
   "name": "phenotypePhebruary2023 - an OHDSI network study",
-  "modifiedDate": 19399,
+  "modifiedDate": 19411,
   "modifiedBy": "rao@ohdsi.org",
   "id": 1,
   "packageName": "phenotypePhebruary2023"

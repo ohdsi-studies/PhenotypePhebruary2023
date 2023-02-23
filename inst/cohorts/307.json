@@ -7,77 +7,24 @@
   "CensorWindow": {},
   "ConceptSets": [
     {
-      "expression": {"items": [
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4112970,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "254976006",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Optic nerve glioma",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4216000,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "395505000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neoplasm of optic nerve",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4242813,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "92257005",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Benign neoplasm of optic nerve",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4212449,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "414950005",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Optic nerve glioma of orbit",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4194827,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "395502002",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Neoplasm of optic nerve and sheath",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        }
-      ]},
-      "name": "Neoplasm or glioma of optic nerve",
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "Neoplasm of optic nerve",
       "id": 0
     },
     {
